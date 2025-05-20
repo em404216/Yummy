@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>يامي فود | YummyFood</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet"
+    />
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Your styles -->
+    <link href="../main.css" rel="stylesheet" />
+    <link href="./rtl.css" rel="stylesheet" />
+
+    <!-- FontAwesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+ <link href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" rel="stylesheet">
+
+    
+    <!-- Your HTML content here -->
+
+    <!-- Bootstrap Bundle JS CDN (Popper included) -->
+  </head>
+  <body>
+    <header class="main-header">
+      <!-- Topbar -->
+      <div class="topbar py-2 border-bottom bg-light text-dark">
+  <div class="container d-flex justify-content-between align-items-center flex-wrap">
+    <!-- Left Side -->
+    <div class="d-flex align-items-center mb-2 mb-md-0 flex-grow-1 flex-wrap">
+      <div class="social-icons ms-3 me-2">
+        <!-- ms-3 for RTL, me-2 for spacing -->
+        <a href="https://www.facebook.com/share/16fcDdSkMa/" class="text-dark">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+      </div>
+      <span class="text-nowrap small">شركة يامي فود للصناعات الغذائية والمنتجات الزراعية</span>
+    </div>
+
+    <!-- Right Side -->
+    <div class="d-flex align-items-center gap-2 flex-wrap justify-content-end">
+      <a href="#" class="text-dark small">
+        <i class="fas fa-envelope me-1"></i> mohamedali331992@gmail.com
+      </a>
+
+      <!-- Language Switcher -->
+      <div class="dropdown">
+              <a
+                class="btn btn-sm btn-outline-light "
+                href="#"
+                role="button"
+                id="langDropdown"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                🌐 Language: Arabic
+              </a>
+
+              <ul
+                class="dropdown-menu dropdown-menu-end"
+                aria-labelledby="langDropdown"
+              >
+                <li>
+                  <a class="dropdown-item" href="../index.html">🇺🇸 English</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">🇸🇦 العربية</a>
+                </li>
+              </ul>
+            </div>
+    </div>
+  </div>
+</div>
+
+      <!-- End Topbar -->
+
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-light main-menu">
+        <div class="container">
+          <a class="navbar-brand" href="/ar/index.html">
+            <img src="../img/logo-removebg-preview.png" alt="الشعار" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarContent"
+            aria-controls="navbarContent"
+            aria-expanded="false"
+            aria-label="تبديل التنقل"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item ">
+                <a
+                  class="nav-link -toggle active"
+                  href="/ar/index.html"
+                  role="button"
+                  
+                  aria-expanded="false"
+                >
+                  الصفحة الرئيسية
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="/ar/about.html">من نحن</a>
+              </li>
+
+              <li class="nav-item ">
+                <a
+                  class="nav-link -toggle"
+                  href="#"
+                  role="button"
+                 
+                  aria-expanded="false"
+                >
+                  المنتجات
+                </a>
+                <!-- <ul class="-menu -menu-start">
+                  <li>
+                    <a class="-item" href="/ar/services.html"
+                      >ما نقدمه</a
+                    >
+                  </li>
+                  <li>
+                    <a class="-item" href="/ar/service-details.html"
+                      >تفاصيل الخدمة</a
+                    >
+                  </li>
+                </ul> -->
+              </li>
+
+              <li class="nav-item ">
+                <a
+                  class="nav-link -toggle"
+                  href="/ar/projects.html"
+                  role="button"
+                
+                  aria-expanded="false"
+                >
+                  المشاريع
+                </a>
+                <!-- <ul class="-menu -menu-start">
+                  <li>
+                    <a class="-item" href="/ar/projects.html"
+                      >مشاريعنا</a
+                    >
+                  </li>
+                  <li>
+                    <a class="-item" href="/ar/project-details.html"
+                      >تفاصيل المشروع</a
+                    >
+                  </li>
+                </ul> -->
+              </li>
+
+              <!-- <li class="nav-item ">
+                <a
+                  class="nav-link -toggle"
+                  href="/ar/blog.html"
+                  role="button"
+                 
+                  aria-expanded="false"
+                >
+                  الأخبار
+                </a>
+                <ul class="-menu -menu-start">
+                  <li>
+                    <a class="-item" href="/ar/blog.html"
+                      >آخر الأخبار</a
+                    >
+                  </li>
+                  <li>
+                    <a class="-item" href="/ar/blog-details.html"
+                      >تفاصيل الأخبار</a
+                    >
+                  </li>
+                </ul>
+              </li> -->
+
+              <li class="nav-item">
+                <a class="nav-link" href="/ar/contact.html">تواصل معنا</a>
+              </li>
+            </ul>
+
+            <div class="header-tools d-flex align-items-center">
+             
+             
+              <a href="tel:+926668880000" class="header-phone">
+                <i class="fas fa-phone-alt"></i>
+                <span>
+                  <small>اتصل في أي وقت</small><br />
+                  <strong>+201113910444</strong>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- End Navbar -->
+    </header>
+    <!-- hero -->
+    <section id="hero-arabic">
+      <div class="hero-bg"></div>
+      <div class="overlay"></div>
+
+      <div class="hero-content custom-container animate-hero">
+        <h1>شركه يامي- الجودة في كل تجميد</h1>
+        <h4>رحلتك البحثية تنتهي هنا</h4>
+      </div>
+    </section>
+    <!-- counter -->
+  
+
+<div class="container-fluid bg-icon py-5" dir="rtl">
+  <section>
+    <div class="container">
+      <div class="row justify-content-center text-center">
+
+        <!-- Counter: Tons/year -->
+        <div class="col-md-3 col-sm-6 counter-section" data-aos="fade-up" data-aos-duration="900">
+          <i>
+            <img
+              class="filterit primary hover-pulse"
+              src="https://www.rootsagriculture.com/assets/web/images/tons.svg"
+              width="50"
+              height="50"
+              alt=""
+            />
+          </i>
+          <span
+            class="purecounter text-thm-primary d-block fs-2 fw-bold"
+            data-purecounter-start="0"
+            data-purecounter-end="5000"
+            data-purecounter-duration="3"
+          >0</span>
+          <span class="counter-title text-thm-primary">طن / السنة</span>
+        </div>
+
+        <!-- Counter: Shipments -->
+        <div class="col-md-3 col-sm-6 counter-section" data-aos="fade-up" data-aos-duration="1000">
+          <i>
+            <img
+              class="filterit primary hover-pulse"
+              src="https://www.rootsagriculture.com/assets/web/images/ship4.svg"
+              width="50"
+              height="50"
+              alt=""
+            />
+          </i>
+          <span
+            class="purecounter text-thm-primary d-block fs-2 fw-bold"
+            data-purecounter-start="0"
+            data-purecounter-end="200"
+            data-purecounter-duration="3"
+          >0</span>
+          <span class="counter-title text-thm-primary">شحنات</span>
+        </div>
+
+        <!-- Counter: Quality -->
+        <div class="col-md-3 col-sm-6 counter-section" data-aos="fade-up" data-aos-duration="1100">
+          <i>
+            <img
+              class="filterit primary hover-pulse"
+              src="https://www.rootsagriculture.com/assets/web/images/quality.svg"
+              width="50"
+              height="50"
+              alt=""
+            />
+          </i>
+          <span
+            class="purecounter text-thm-primary d-block fs-2 fw-bold"
+            data-purecounter-start="0"
+            data-purecounter-end="100"
+            data-purecounter-duration="3"
+          >0</span>
+          <span class="counter-title text-thm-primary">جوده</span>
+        </div>
+
+        <!-- Static: Service -->
+        <div class="col-lg-3 col-md-6 col-sm-6 mb-4 counter-section" data-aos="fade-up" data-aos-duration="1200">
+          <i>
+            <img
+              class="filterit primary hover-pulse"
+              src="https://www.rootsagriculture.com/assets/web/images/customer-service.svg"
+              width="50"
+              height="50"
+              alt=""
+            />
+          </i>
+          <span class="text-thm-primary d-block fs-2 fw-bold">24/7</span>
+          <span class="counter-title text-thm-primary">خدمة</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</div>
+<!-- abous as  -->
+<section class="hero-about-section with-ripped-edges" dir="rtl">
+  <div class="container">
+    <div class="row justify-content-start">
+      <div class="col-md-6 content-box">
+        <h2>نبذة عن الشركة</h2>
+        <p>
+          تأسست شركة <strong>يامي فود</strong> للصناعات الغذائية والمنتجات الزراعية عام <strong>2019</strong> في مدينة الإسماعيلية، بجمهورية مصر العربية، كإحدى شركات مجموعة <strong>الجعيص جروب</strong>.
+        </p>
+        <p>
+          منذ انطلاقها، تخصصت الشركة في تصدير <span style="color: var(--thm-primary); font-weight: bold;">المنتجات الزراعية المجمدة</span> عالية الجودة، وبالأخص <span style="color: var(--thm-primary); font-weight: bold;">الفراولة المجمدة بتقنية التجميد السريع (IQF)</span> إلى أسواق <strong>البرازيل</strong>، <strong>أوروبا</strong>، و<strong>الشرق الأوسط</strong>.
+        </p>
+        <a href="#about" class="btn btn-primary">اقرأ المزيد</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- gallery -->
+ <div class="wide" style="margin-top: 5%;"></div>
+ <section class="ftco-section ftco-category ftco-no-pt" dir="rtl" style="text-align: right;">
+  <div class="container">
+    <div class="row justify-content-center mb-4 pb-2">
+      <div class="col-md-12 heading-section text-center" data-aos="fade-down">
+        <h2 class="mb-3" style="color: var(--thm-base); font-family: var(--thm-font);">
+          منتجاتنا | Our Products
+        </h2>
+        <p style="color: var(--thm-color); font-family: var(--thm-font);">
+          اكتشف تشكيلتنا المميزة من الفواكه والخضروات المجمدة
+        </p>
+      </div>
+    </div>
+
+    <div class="row g-4" id="gallery-container">
+
+      <!-- الفراولة -->
+      <div class="col-md-4" data-aos="zoom-in">
+        <a href="./img/straw.jpg" class="glightbox" data-title="فراولة مجمدة بتقنية IQF">
+          <div class="gallery-card">
+            <div class="gallery-image" style="background-image: url('../img/straw.jpg');"></div>
+            <div class="gallery-overlay">
+              <h4>فراولة مجمدة بتقنية IQF</h4>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- مانجو -->
+      <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+        <a href="../img/mango.jpg" class="glightbox" data-title="مانجو مجمدة">
+          <div class="gallery-card">
+            <div class="gallery-image" style="background-image: url('../img/mango.jpg');"></div>
+            <div class="gallery-overlay">
+              <h4>مانجو مجمدة</h4>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- مشمش -->
+      <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+        <a href="../img/items/item-9.png" class="glightbox" data-title="مشمش مجمد">
+          <div class="gallery-card">
+            <div class="gallery-image" style="background-image: url('../img/items/item-9.png');"></div>
+            <div class="gallery-overlay">
+              <h4>مشمش مجمد</h4>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- رمان -->
+      <div class="col-md-4" data-aos="zoom-in" data-aos-delay="300">
+        <a href="../img/items/item-10.png" class="glightbox" data-title="رمان مجمد (حب)">
+          <div class="gallery-card">
+            <div class="gallery-image" style="background-image: url('../img/items/item-10.png');"></div>
+            <div class="gallery-overlay">
+              <h4>رمان مجمد (حب)</h4>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- جوافة -->
+      <div class="col-md-4" data-aos="zoom-in" data-aos-delay="400">
+        <a href="./img/items/item-4.png" class="glightbox" data-title="جوافة مجمدة">
+          <div class="gallery-card">
+            <div class="gallery-image" style="background-image: url('../img/items/item-4.png');"></div>
+            <div class="gallery-overlay">
+              <h4>جوافة مجمدة</h4>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- بروكلي -->
+      <div class="col-md-4" data-aos="zoom-in" data-aos-delay="500">
+        <a href="./img/fasoliajpg.jpg" class="glightbox" data-title="خضروات مجمدة">
+          <div class="gallery-card">
+            <div class="gallery-image" style="background-image: url('../img/fasoliajpg.jpg');"></div>
+            <div class="gallery-overlay">
+              <h4>خضروات مجمدة</h4>
+            </div>
+          </div>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- vision and mission -->
+ 
+<div class="container-vision mt-5 pt-5" dir="rtl">
+  <!-- Mission Card -->
+  <div class="card" data-aos="fade-left">
+    <h3>رسالتنا</h3>
+    <p>
+      تقديم منتجات طبيعية وآمنة بأعلى معايير الجودة لعملائنا حول العالم، مع الحفاظ على القيمة الغذائية والمذاق الأصلي للمنتجات الزراعية المصرية.
+    </p>
+  </div>
+
+  <!-- Center Logo with Caption -->
+  <div class="logo-section" data-aos="zoom-in"  data-aos-duration="500">
+    <div class="logo-title">
+      <img src="../img/logo-removebg-preview (1).png" alt="YummyFood Logo" />
+    </div>
+    <div class="caption">نكهة مصرية... بجودة عالمية</div>
+  </div>
+
+  <!-- Vision Card -->
+  <div class="card" data-aos="fade-right">
+    <h3>رؤيتنا</h3>
+    <p>
+      أن نكون من الرواد في تصدير المنتجات الزراعية المجمدة بجودة عالمية، وتعزيز مكانة المنتج المصري في الأسواق العالمية.
+    </p>
+  </div>
+</div>
+
+<!-- values -->
+<section class="values-section rtl">
+  <h2 data-aos="fade-up">قيمنا</h2>
+  <div class="values-container">
+    <div class="card" data-aos="fade-up">
+      <i class="fas fa-award"></i>
+      <h3>الجودة</h3>
+      <p>نلتزم بأعلى معايير الجودة في جميع مراحل الإنتاج والتصدير.</p>
+    </div>
+    <div class="card" data-aos="fade-up" data-aos-delay="100">
+      <i class="fas fa-apple-alt"></i>
+      <h3>السلامة الغذائية</h3>
+      <p>نضع صحة وسلامة المستهلك في مقدمة أولوياتنا.</p>
+    </div>
+    <div class="card" data-aos="fade-up" data-aos-delay="200">
+      <i class="fas fa-handshake"></i>
+      <h3>الشفافية</h3>
+      <p>نتعامل بصدق ووضوح مع عملائنا وشركائنا.</p>
+    </div>
+    <div class="card" data-aos="fade-up" data-aos-delay="300">
+      <i class="fas fa-smile-beam"></i>
+      <h3>رضا العملاء</h3>
+      <p>نحرص على تلبية توقعات عملائنا وتجاوزها باستمرار.</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- footer -->
+
+
+<!-- Arabic Version -->
+<footer class="thm-footer" dir="rtl">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="../img/logo-removebg-preview (1).png" style="width: 100px; height: auto;" />
+        <p>نقدم الجودة بشغف وهدف.</p>
+      </div>
+      <div class="footer-links">
+        <h5>روابط سريعة</h5>
+        <ul>
+          <li><a href="#">الرئيسية</a></li>
+          <li><a href="#">خدماتنا</a></li>
+          <li><a href="#">أعمالنا</a></li>
+          <li><a href="#">تواصل معنا</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h5>اتصل بنا</h5>
+        <p>mohamedali331992@gmail.com</p>
+        <p>الهاتف: +201113910444</p>
+        <p>
+          <i class="fas fa-map-marker-alt me-2"></i>
+         الجامعة القديمة، شارع 10، الإسماعيلية، جمهورية مصر العربية
+        </p>
+        <div class="footer-social">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-whatsapp"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 جميع الحقوق محفوظة يامي فود.</p>
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+    <script>
+          AOS.init({
+    duration: 1000,
+    once: true
+  });
+      const lightbox = GLightbox({
+    selector: '.glightbox'
+  });
+      new PureCounter();
+      const langLinks = document.querySelectorAll(".-item");
+      langLinks.forEach((link) => {
+        link.addEventListener("click", function () {
+          if (this.href.includes("lang=ar")) {
+            document.documentElement.lang = "ar";
+            document.documentElement.dir = "rtl";
+          } else {
+            document.documentElement.lang = "en";
+            document.documentElement.dir = "ltr";
+          }
+        });
+      });
+
+      //   hero
+      const imagesArabic = [
+        "../img/slider-1717158027.jpg",
+        "../img/top-view-arrangement-frozen-food.jpg",
+        "../img/item-2.jpg",
+      ];
+
+      const captionsArabic = [
+        {
+          title: "شركة يامي فود - الجودة في كل تجميد",
+          subtitle: "رحلتك البحثية تنتهي هنا",
+        },
+        {
+          title: "منتجات مجمدة طازجة دائماً",
+          subtitle: "نقدم الأفضل من المزرعة إلى المائدة",
+        },
+        {
+          title: "تصدير التميز عالمياً",
+          subtitle: "شريكك الموثوق في الزراعة المجمدة",
+        },
+      ];
+
+      let currentIndexArabic = 0;
+      const bgDivArabic = document.querySelector("#hero-arabic .hero-bg");
+      const heroContentArabic = document.querySelector(
+        "#hero-arabic .hero-content"
+      );
+      const titleElArabic = heroContentArabic.querySelector("h1");
+      const subtitleElArabic = heroContentArabic.querySelector("h4");
+
+      if (
+        bgDivArabic &&
+        heroContentArabic &&
+        titleElArabic &&
+        subtitleElArabic
+      ) {
+        bgDivArabic.style.backgroundImage = `url('${imagesArabic[0]}')`;
+        titleElArabic.textContent = captionsArabic[0].title;
+        subtitleElArabic.textContent = captionsArabic[0].subtitle;
+
+        setInterval(() => {
+          currentIndexArabic = (currentIndexArabic + 1) % imagesArabic.length;
+          bgDivArabic.style.backgroundImage = `url('${imagesArabic[currentIndexArabic]}')`;
+
+          titleElArabic.textContent = captionsArabic[currentIndexArabic].title;
+          subtitleElArabic.textContent =
+            captionsArabic[currentIndexArabic].subtitle;
+
+          heroContentArabic.classList.remove("animate-hero");
+          void heroContentArabic.offsetWidth;
+          heroContentArabic.classList.add("animate-hero");
+        }, 7000);
+      }
+      if (window.innerWidth < 768) {
+  document.querySelectorAll('.card').forEach(card => {
+    card.classList.add('mobile-flat');
+  });
+}
+
+    </script>
+  </body>
+</html>
