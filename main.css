@@ -915,9 +915,9 @@ border-color: white ;
 /* Image Card Styling */
 .card-img {
   background: #fff;
-  padding: 12px;
-  width: 180px;
-  height: 180px;
+  padding: 13px;
+  width: 150px;
+  height: 150px;
   transform: skewY(-4deg);
   border-radius: 25px 60px 25px 60px;
   box-shadow: 0 12px 28px rgba(0, 0, 0, 0.1);
@@ -1067,6 +1067,28 @@ video:hover {
   text-shadow: 0 0 5px black;
 }
 
+/* backtotop */
+#backToTop {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  background: var(--thm-base);
+  color: var(--thm-light);
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-family: var(--thm-font);
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 6px 12px rgba(73, 167, 96, 0.6);
+  transition: background 0.3s ease, transform 0.3s ease;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  z-index: 1000;
+}
 
 
 
