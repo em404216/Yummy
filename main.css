@@ -1114,7 +1114,9 @@ video:hover {
   z-index: 1000;
 }
 
-
+#backToTop.show {
+  display: flex;
+}
 
 
 .whatsapp-float {
