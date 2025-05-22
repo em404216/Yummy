@@ -1007,3 +1007,22 @@ border-color: white ;
 #backToTop.show {
   display: flex;
 }
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background-color: #49a760; /* --thm-base */
+  color: #f8f9fa; /* --thm-light */
+  font-size: 24px;
+  padding: 8px 16px;
+  border-radius: 50%;
+  box-shadow: 0 6px 15px rgba(73, 167, 96, 0.3); /* subtle shadow */
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+.whatsapp-float:hover {
+  background-color: #f7c35f; /* --thm-primary */
+  color: #255946; /* --thm-black */
+  transform: scale(1.1);
+}
