@@ -1118,6 +1118,11 @@ video:hover {
   display: flex;
 }
 
+#backToTop:hover {
+  background: var(--thm-primary);
+  color: var(--thm-black);
+  transform: scale(1.15);
+}
 
 .whatsapp-float {
   position: fixed;
