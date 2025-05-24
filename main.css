@@ -1143,3 +1143,58 @@ video:hover {
   color: #255946; /* --thm-black */
   transform: scale(1.1);
 }
+/* catalog */
+.skewed-feature-card {
+  background: #fff;
+  padding: 35px 30px;
+  width: 100%;
+  max-width: 330px;
+  transform: skewY(-4deg);
+  border-radius: 25px 60px 25px 60px;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease-in-out;
+  animation: bounceIn 1s ease forwards;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.skewed-feature-card img {
+  transform: skewY(4deg);
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+
+.skewed-feature-card:hover img {
+  transform: scale(1.05) skewY(4deg);
+}
+
+.skewed-feature-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -150%;
+  width: 150%;
+  height: 100%;
+  background: linear-gradient(120deg, transparent 0%, rgba(255, 255, 255, 0.4) 50%, transparent 100%);
+  transform: skewX(-20deg);
+  pointer-events: none;
+  transition: left 0.3s ease;
+  z-index: 2;
+}
+
+.skewed-feature-card:hover::before {
+  left: 100%;
+}
+
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    transform: translateY(50px) skewY(-4deg);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) skewY(-4deg);
+  }
+}
+

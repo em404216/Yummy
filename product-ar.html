@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>أنواع الخضروات المجمدة بنظام IQF</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    :root {
+      --thm-font: "Inter", sans-serif;
+      --thm-base: #49a760;
+      --thm-primary: #f7c35f;
+      --thm-black: #255946;
+      --thm-color: #6e7673;
+      --thm-light: #f8f9fa;
+      --thm-filter-match: #4da880;
+    }
+    body {
+      font-family: var(--thm-font);
+      background-color: var(--thm-light);
+      color: var(--thm-black);
+    }
+    .veg-card {
+      background: linear-gradient(145deg, #ffffff, #f1f1f1);
+      padding: 25px;
+      border-radius: 25px 5px 25px 5px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      position: relative;
+      border: 2px dashed var(--thm-primary);
+    }
+    .veg-card::after {
+      content: "";
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background: var(--thm-base);
+      border-radius: 50%;
+      top: -10px;
+      right: -10px;
+      box-shadow: 0 0 0 4px white;
+    }
+    .veg-card:hover {
+      transform: translateY(-10px) scale(1.02);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    }
+    .veg-card img {
+      max-height: 180px;
+      border-radius: 15px;
+      margin-bottom: 15px;
+      object-fit: cover;
+      width: 100%;
+      border: 3px solid var(--thm-base);
+    }
+    .veg-card h5 {
+      color: var(--thm-base);
+      margin-bottom: 10px;
+      font-weight: 700;
+      font-size: 1.2rem;
+    }
+    .veg-card p {
+      color: var(--thm-color);
+      font-size: 0.95rem;
+      line-height: 1.5;
+      flex-grow: 1;
+    }
+    .grade-section {
+      max-width: 700px;
+      margin: 40px auto 0;
+      padding: 25px;
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+    }
+    .grade-section h4 {
+      color: var(--thm-base);
+      font-weight: 700;
+      margin-bottom: 15px;
+    }
+    .grade-section p {
+      color: var(--thm-black);
+      font-size: 1rem;
+      margin-bottom: 10px;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+
+<section class="py-5">
+  <div class="container">
+
+    <div class="text-center mb-5" data-aos="fade-up">
+      <h2 class="fw-bold" style="color: var(--thm-base); font-size: 2rem;">أنواع الخضروات المجمدة بنظام IQF</h2>
+      <p class="lead mt-3" style="color: var(--thm-color); max-width: 700px; margin: auto;">
+        نقدم مجموعة متنوعة من الخضروات المجمدة بأعلى جودة، تحافظ على الطزاجة والقيمة الغذائية.
+      </p>
+    </div>
+
+    <div class="row g-4">
+      <!-- Cards with dynamic modal generation will be inserted here -->
+      <!-- Placeholder for dynamic rendering -->
+    </div>
+
+    <div class="grade-section" data-aos="fade-up" data-aos-delay="600">
+      <h4>تصنيف الجودة</h4>
+      <p><strong>Grade A:</strong> لون ممتاز، حجم موحد، خالٍ من العيوب.</p>
+      <p><strong>Grade B:</strong> جيد لكن قد يحتوي على اختلاف في اللون أو الحجم.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- Vegetable Modals Section -->
+<div id="modals-container"></div>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({ duration: 800, once: true });
+
+  const vegetables = [
+    {
+      name: "البازلاء (Peas)",
+      img: "./img/items/peans.jpeg",
+      desc: "كاملة أو مع جزر (بازلاء وجزر). درجة A أو B حسب اللون والحجم.",
+      details: "الأشكال المتوفرة: كاملة أو ممزوجة مع الجزر.\nدرجات الجودة: A و B حسب اللون والحجم.\nالاستخدام: مثالية للشوربات والطبخ السريع."
+    },
+    {
+      name: "الفاصوليا الخضراء (Green Beans)",
+      img: "./img/items/fasolia.jpeg",
+      desc: "مقطعة أو كاملة (Whole / Cut).",
+      details: "أنواع: كاملة، مقطعة.\nدرجة A أو B حسب اللون والحجم.\nالاستخدام: طهي مباشر أو إضافات للأطباق."
+    },
+    {
+      name: "الذرة الحلوة (Sweet Corn)",
+      img: "./img/items/sweetcorn.jpeg",
+      desc: "حبوب فقط أو مع خضروات مشكلة.",
+      details: "أصفر ذهبي، طازج، حبوب كاملة.\nدرجة A ممتازة للطعم والمظهر.\nمناسب للسلطات والطواجن."
+    },
+    {
+      name: "السبانخ (Spinach)",
+      img: "./img/items/growing-spinach.jpg",
+      desc: "مفرومة أو أوراق كاملة.",
+      details: "نظيف ومجمد سريعًا للحفاظ على اللون والطعم.\nمثالي للمخبوزات والشوربات."
+    },
+    {
+      name: "البامية (Okra)",
+      img: "./img/items/okra.jpg",
+      desc: "مقطعة حلقات أو كاملة صغيرة الحجم (Zero).",
+      details: "درجة A خالية من الشعيرات.\nمثالية للمولخية وأطباق الطهي الشرقي."
+    },
+    {
+      name: "الخرشوف (Artichoke)",
+      img: "./img/items/artichoke.avif",
+      desc: "أنصاف أو أرباع، قلب الخرشوف.",
+      details: "جاهز للطهي، مشبع بالألياف.\nيستخدم في السلطات، والبيتزا، والأطباق الفاخرة."
+    },
+    {
+      name: "القرنبيط والبروكلي (Cauliflower & Broccoli)",
+      img: "./img/items/college-6.jpeg",
+      desc: "زهرات بحجم منتظم.",
+      details: "خضار مغذية، مثالية للحمية.\nتحافظ على القوام واللون بعد الطهي."
+    },
+    {
+      name: "الجزر (Carrots)",
+      img: "./img/items/carrot.jpg",
+      desc: "شرائح أو مكعبات أو أعواد جوليان.",
+      details: "أشكال متعددة حسب الاستخدام.\nألوان زاهية وجودة عالية."
+    },
+    {
+      name: "البطاطس (Potatoes)",
+      img: "./img/items/potatos.jpg.webp",
+      desc: "مكعبات، أصابع، ويدجز (Fries, Cubes, Wedges).",
+      details: "بطاطس عالية الجودة، خالية من العيوب.\nجاهزة للقلي أو الخبز."
+    },
+    {
+      name: "خلطات خضار مشكلة (Mixed Vegetables)",
+      img: "./img/items/vegatables.jpeg",
+      desc: "تركيبات من بازلاء، جزر، ذرة، فاصوليا، بروكلي، وغيرها.",
+      details: "متنوعة، مغذية، وجاهزة للطهي.\nمثالية للطبخ السريع والشوربات."
+    }
+  ];
+
+  const row = document.querySelector(".row.g-4");
+  const modalsContainer = document.getElementById("modals-container");
+
+  vegetables.forEach((veg, i) => {
+    const delay = 100 + i * 50;
+    const id = `vegModal${i}`;
+
+    row.innerHTML += `
+      <div class="col-12 col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="${delay}">
+        <div class="veg-card" data-bs-toggle="modal" data-bs-target="#${id}">
+          <img src="${veg.img}" alt="${veg.name}" />
+          <h5>${veg.name}</h5>
+          <p>${veg.desc}</p>
+        </div>
+      </div>
+    `;
+
+    modalsContainer.innerHTML += `
+      <div class="modal fade" id="${id}" tabindex="-1" aria-labelledby="${id}Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header" style="background-color: var(--thm-base); color: white;">
+              <h5 class="modal-title" id="${id}Label">تفاصيل ${veg.name}</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="إغلاق"></button>
+            </div>
+            <div class="modal-body" style="font-size: 1rem; line-height: 1.7; color: var(--thm-black);">
+              <p>${veg.details.replace(/\n/g, '<br>')}</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">إغلاق</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    `;
+  });
+</script>
+
+</body>
+</html>
+
