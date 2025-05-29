@@ -40,49 +40,54 @@
   <body>
     <header class="main-header">
       <!-- Topbar -->
-<div class="topbar py-2 border-bottom bg-light " dir="rtl">
-  <div class="container d-flex align-items-center flex-wrap justify-content-between">
-    <!-- Right Side (Social Icons + Text) -->
-    <div class="d-flex align-items-center mb-2 mb-md-0 flex-grow-1 flex-wrap justify-content-center justify-content-md-start">
-      <div class="social-icons ms-2 me-3 d-flex gap-2">
-        <a href="https://www.facebook.com/share/16fcDdSkMa/" target="_blank">
-          <i class="fab fa-facebook-f"></i>
-        </a>
-        <a href="https://wa.me/+201113910444"  target="_blank">
-          <i class="fab fa-whatsapp"></i>
-        </a>
-        <a href="https://www.instagram.com/"  target="_blank">
-          <i class="fab fa-instagram"></i>
-        </a>
-        <a href="https://www.youtube.com/@YUMMYFOOD_Agricultural"  target="_blank">
-          <i class="fab fa-youtube"></i>
-        </a>
+     <div class="topbar py-2 border-bottom" dir="rtl">
+  <div class="container">
+    <div class="row align-items-center">
+      
+      <!-- Right Side (Social Icons + Welcome Text) -->
+      <div class="col-12 col-md-6 mb-2 mb-md-0">
+        <div class="d-flex align-items-center flex-wrap justify-content-center justify-content-md-start text-center text-md-start">
+          <div class="social-icons ms-2 me-3 d-flex gap-2">
+            <a href="https://www.facebook.com/share/16fcDdSkMa/" target="_blank">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://wa.me/+201113910444" target="_blank">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.youtube.com/@YUMMYFOOD_Agricultural" target="_blank">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </div>
+          <span class="small text-wrap ms-2">
+            شركة يامي فود للصناعات الغذائية والمنتجات الزراعية
+          </span>
+        </div>
       </div>
-      <span class="text-nowrap small ms-2">
-        شركة يامي فود للصناعات الغذائية والمنتجات الزراعية
-      </span>
-    </div>
 
-    <!-- Left Side (Contact + Language Switch) -->
-    <div class="d-flex align-items-center gap-2 flex-wrap justify-content-center justify-content-md-end text-center text-md-end">
-      <a href="#" class=" small">
-        <i class="fas fa-envelope ms-1"></i> info@YummyFood.com
-      </a>
-
-      <!-- Language Switcher -->
-      <div class="dropdown">
-        <a class="btn btn-sm btn-outline-dark" href="#" id="langDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-          🌐 اللغة: العربية
-        </a>
-        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="langDropdown">
-          <li><a class="dropdown-item" href="../index.html">🇺🇸 English</a></li>
-          <li><a class="dropdown-item" href="#">🇸🇦 العربية</a></li>
-        </ul>
+      <!-- Left Side (Email + Language Switcher) -->
+      <div class="col-12 col-md-6">
+        <div class="d-flex flex-column align-items-center align-items-md-end text-center text-md-end gap-1">
+          <a href="#" class="small text-decoration-none mb-1">
+            <i class="fas fa-envelope ms-1"></i> info@YummyFood.com
+          </a>
+          <div class="dropdown">
+            <a class="btn btn-sm btn-outline-dark" href="#" id="langDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+              🌐 اللغة: العربية
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="langDropdown">
+              <li><a class="dropdown-item" href="../index.html">🇺🇸 English</a></li>
+              <li><a class="dropdown-item" href="#">🇸🇦 العربية</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
+
     </div>
   </div>
 </div>
-
 
 
       <!-- End Topbar -->
@@ -121,20 +126,16 @@
               <li class="nav-item">
                 <a class="nav-link" href="#about">من نحن</a>
               </li>
- <li class="nav-item">
+              <li class="nav-item">
                 <a
                   class="nav-link -toggle"
                   href="#features"
                   role="button"
                   aria-expanded="false"
-                  
                 >
-              التصنيفات
+                  التصنيفات
                 </a>
-             
-               
               </li>
-
 
               <li class="nav-item">
                 <a
@@ -142,15 +143,10 @@
                   href="#gallery"
                   role="button"
                   aria-expanded="false"
-                  
                 >
-              المنتجات
+                  المنتجات
                 </a>
-             
-               
               </li>
-
-              
 
               <li class="nav-item">
                 <a class="nav-link" href="#footer">تواصل معنا</a>
@@ -311,54 +307,90 @@
         </div>
       </div>
     </section>
-<!-- features -->
- <section class="py-5" style=" font-family: var(--thm-font);" dir="rtl">
-  <div class="container">
-    
-    <!-- Section Title -->
-    <div class="text-center mb-4 px-2" data-aos="fade-up" id="features">
-      <h2 class="fw-bold" style="color: var(--thm-base); font-size: 1.8rem;">
-        من الحقل إلى المُجمّد
-      </h2>
-      <p class="lead mt-2" style="color: var(--thm-color); font-size: 1rem; max-width: 100%; margin: auto;">
-        فواكه وخضروات مجمدة بتقنية IQF للحفاظ على الطزاجة والقيمة الغذائية بأعلى جودة.
-      </p>
-    </div>
-
-    <!-- Cards Row -->
-    <div class="row g-4 justify-content-center">
-
-      <!-- IQF Fruits Card -->
-      <div class="col-12 col-sm-10 col-md-6 d-flex justify-content-center" data-aos="zoom-in" data-aos-delay="100" >
-        <div class="skewed-feature-card text-center w-100" style="max-width: 330px;">
-          <a href="../fruits-ar.html" class="d-block position-relative">
-            <img src="../img/items/frozen-strawberry.jpg" class="img-fluid" alt="فواكه IQF" />
-          </a>
-          <h2 class="mt-4 fs-5">
-            <a href="../fruits-ar.html" class="text-decoration-none" style="color: var(--thm-black);">
-              فواكه IQF
-            </a>
+    <!-- features -->
+    <section class="py-5" style="font-family: var(--thm-font)" dir="rtl">
+      <div class="container">
+        <!-- Section Title -->
+        <div class="text-center mb-4 px-2" data-aos="fade-up" id="features">
+          <h2 class="fw-bold" style="color: var(--thm-base); font-size: 1.8rem">
+            من الحقل إلى المُجمّد
           </h2>
+          <p
+            class="lead mt-2"
+            style="
+              color: var(--thm-color);
+              font-size: 1rem;
+              max-width: 100%;
+              margin: auto;
+            "
+          >
+            فواكه وخضروات مجمدة بتقنية IQF للحفاظ على الطزاجة والقيمة الغذائية
+            بأعلى جودة.
+          </p>
+        </div>
+
+        <!-- Cards Row -->
+        <div class="row g-4 justify-content-center">
+          <!-- IQF Fruits Card -->
+          <div
+            class="col-12 col-sm-10 col-md-6 d-flex justify-content-center"
+            data-aos="zoom-in"
+            data-aos-delay="100"
+          >
+            <div
+              class="skewed-feature-card text-center w-100"
+              style="max-width: 330px"
+            >
+              <a href="../fruits-ar.html" class="d-block position-relative">
+                <img
+                  src="../img/items/frozen-strawberry.jpg"
+                  class="img-fluid"
+                  alt="فواكه IQF"
+                />
+              </a>
+              <h2 class="mt-4 fs-5">
+                <a
+                  href="../fruits-ar.html"
+                  class="text-decoration-none"
+                  style="color: var(--thm-black)"
+                >
+                  فواكه IQF
+                </a>
+              </h2>
+            </div>
+          </div>
+
+          <!-- IQF Vegetables Card -->
+          <div
+            class="col-12 col-sm-10 col-md-6 d-flex justify-content-center"
+            data-aos="zoom-in"
+            data-aos-delay="200"
+          >
+            <div
+              class="skewed-feature-card text-center w-100"
+              style="max-width: 330px"
+            >
+              <a href="../product-ar.html" class="d-block position-relative">
+                <img
+                  src="../img/items/category-1733746339.webp"
+                  class="img-fluid"
+                  alt="خضروات IQF"
+                />
+              </a>
+              <h2 class="mt-4 fs-5">
+                <a
+                  href="../product-ar.html"
+                  class="text-decoration-none"
+                  style="color: var(--thm-black)"
+                >
+                  خضروات IQF
+                </a>
+              </h2>
+            </div>
+          </div>
         </div>
       </div>
-
-      <!-- IQF Vegetables Card -->
-      <div class="col-12 col-sm-10 col-md-6 d-flex justify-content-center" data-aos="zoom-in" data-aos-delay="200">
-        <div class="skewed-feature-card text-center w-100" style="max-width: 330px;">
-          <a href="../product-ar.html" class="d-block position-relative">
-            <img src="../img/items/category-1733746339.webp" class="img-fluid" alt="خضروات IQF" />
-          </a>
-          <h2 class="mt-4 fs-5">
-            <a href="../product-ar.html" class="text-decoration-none" style="color: var(--thm-black);">
-              خضروات IQF
-            </a>
-          </h2>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
+    </section>
 
     <!-- gallery -->
     <div class="wide" style="margin-top: 5%"></div>
@@ -378,7 +410,7 @@
               class="mb-3"
               style="color: var(--thm-base); font-family: var(--thm-font)"
             >
-             المعرض
+              المعرض
             </h2>
             <p style="color: var(--thm-color); font-family: var(--thm-font)">
               اكتشف تشكيلتنا المميزة من الفواكه والخضروات المجمدة
@@ -809,35 +841,46 @@
               <li><a href="#">تواصل معنا</a></li>
             </ul>
           </div>
-         <div class="footer-contact">
-  <h5>اتصل بنا</h5>
- <p>
-    <a href="mailto:info@YummyFood.com"  style="text-decoration: none; color: var(--thm-color);">
-      <i class="fas fa-envelope me-1"></i>info@YummyFood.com
-    </a>
-  </p>
-  <p>mohamedali331992@gmail.com</p>
-  <p>الهاتف: +201113910444</p>
-  <p>mahmoudeltayeb28@gmail.com</p>
-  <p>الهاتف: 01010078104</p>
-  <p>
-    <i class="fas fa-map-marker-alt me-2"></i>
-    الجامعة القديمة، شارع 10، الإسماعيلية، جمهورية مصر العربية
-  </p>
+          <div class="footer-contact">
+            <h5>اتصل بنا</h5>
+            <p>
+              <a
+                href="mailto:info@YummyFood.com"
+                style="text-decoration: none; color: var(--thm-color)"
+              >
+                <i class="fas fa-envelope me-1"></i>info@YummyFood.com
+              </a>
+            </p>
+            <p>mohamedali331992@gmail.com</p>
+            <p>الهاتف: +201113910444</p>
+            <p>mahmoudeltayeb28@gmail.com</p>
+            <p>الهاتف: 01010078104</p>
+            <p>
+              <i class="fas fa-map-marker-alt me-2"></i>
+              الجامعة القديمة، شارع 10، الإسماعيلية، جمهورية مصر العربية
+            </p>
 
- 
+            <div class="footer-social">
+              <a
+                href="https://www.facebook.com/share/16fcDdSkMa/"
+                target="_blank"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="https://wa.me/+201113910444" target="_blank"
+                ><i class="fab fa-whatsapp"></i
+              ></a>
+              <a href="https://www.instagram.com/" target="_blank"
+                ><i class="fab fa-instagram"></i
+              ></a>
 
- <div class="footer-social">
-             <a href="https://www.facebook.com/share/16fcDdSkMa/" target="_blank"><i class="fab fa-facebook-f"></i></a>
-    <a href="https://wa.me/+201113910444" target="_blank"><i class="fab fa-whatsapp"></i></a>
-    <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
-    
-            <a href="https://www.youtube.com/@YUMMYFOOD_Agricultural" target="_blank" >
-              <i class="fab fa-youtube"></i>
-            </a>
+              <a
+                href="https://www.youtube.com/@YUMMYFOOD_Agricultural"
+                target="_blank"
+              >
+                <i class="fab fa-youtube"></i>
+              </a>
             </div>
-</div>
-
+          </div>
         </div>
         <div class="footer-bottom">
           <p>&copy; 2025 جميع الحقوق محفوظة يامي فود.</p>
