@@ -926,6 +926,14 @@ border-color: white ;
     width: 130px;
     height: 120px;
   }
+  .export-grid{
+    gap:0.5rem !important ;
+    padding-top:5px ;
+    padding-bottom: 5px;
+  }
+  .card-img{
+    width: 170px !important;
+  }
 }
 
 @media (max-width: 480px) {
