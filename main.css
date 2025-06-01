@@ -901,6 +901,42 @@ border-color: white ;
     margin: 0 8px;
   }
 }
+/* Fix unwanted line under YouTube icon */
+.footer-social a[href*="youtube"] i {
+  border: none !important;
+  box-shadow: none !important;
+  text-decoration: none !important;
+  display: inline-block;
+}
+.footer-social {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-social a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: var(--thm-light);
+  font-size: 18px;
+  transition: color 0.3s;
+  border: none;
+  box-shadow: none;
+}
+
+.footer-social a:hover {
+  color: var(--thm-primary);
+}
+
+.footer-social i {
+  display: inline-block;
+  border: none;
+  box-shadow: none;
+}
+
 
 /* export  */
 /* 2x2 Grid Styling */
